@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jogo da Memória — Arquitetura de Computacional</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Jogo da Memória</h1>
+  <p class="subtitulo">Arquitetura de Computacional</p>
+  <div class="estatisticas">
+    <span>Tentativas: <strong id="tentativas">0</strong></span>
+    <span>Pares: <strong id="pares">0</strong> / 9</span>
+    <span>Tempo: <strong id="tempo">0s</strong></span>
+  </div>
+  <button class="botao" onclick="restart()">Reiniciar</button>
+</header>
+
+<main>
+  <div class="grade" id="grade"></div>
+</main>
+
+<div class="vitoria" id="vitoria">
+  <div class="caixa-vitoria">
+    <p class="emoji">🎉</p>
+    <h2>Você ganhou!</h2>
+    <p id="resultado"></p>
+    <button class="botao" onclick="restart()">Jogar novamente</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
